@@ -1,0 +1,401 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*** Body ***/
+
+body{
+	background-color: hsl(218, 28%, 13%);
+	color: hsl(0, 0%, 100%);
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+a {
+	color: hsl(176, 68%, 64%);
+}
+
+a:active{
+	color:  hsl(0, 0%, 100%);
+}
+
+.clr{
+	clear: both;
+}
+
+button:hover:active{
+	cursor: pointer;
+	background-color: hsl(176, 68%, 64%);
+}
+
+header{
+	background-color: hsl(217, 28%, 15%);
+	padding: 20px 3% 0px;
+}
+
+ 
+.logo {
+  background-image: url(Img/logo.svg);
+  width: 120px;
+  height: 50px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+nav ul li{
+	display:inline;
+	float: right;
+	padding-left: 3%;
+    font-weight: lighter;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+nav ul li:active{
+	text-decoration: underline;
+	font-weight:bold;
+	color:hsl(0, 0%, 100%);
+	cursor: pointer;
+}
+
+
+
+#intro {
+	background-image:url(Img/illustration-intro.png);
+	width: 350px;
+    height: 280px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin:50px auto 0px;
+}  
+
+header h1 {
+	text-align: center;
+	font-weight: 500;
+	margin: 10px 0px;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.wave-img {
+	background-image: url(Img/bg-curvy-desktop.svg);
+	background-size:100%;
+	height: 400px;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+ header p{
+ 	text-align: center;
+ 	margin-top: 40px;
+ 	line-height:1.2em;
+	font-weight:400;
+ }
+
+ .btn{
+	display: flex;
+	justify-content: center;
+	margin-top:15px;
+ }
+ 
+button {
+	background-color: hsl(176, 68%, 64%);
+ 	color: hsl(0, 0%, 100%);
+ 	padding: 10px 70px;
+ 	border-radius: 25px;
+ 	border: none;
+}
+
+/** section 
+    **/
+
+
+	#features .container {
+	   margin: 0 20%;
+	   display: flex;
+	}
+
+	#features .container1{
+		margin: 0 20%; 
+		display: flex;
+	}
+
+  .box1, .box2{
+	flex-basis: 40%;
+	margin-right: 10%;
+	margin-top: 10%;
+	}
+	
+
+.feat1{
+   background-image: url(Img/icon-access-anywhere.svg);
+   width: 83px;
+   height: 78px;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   margin:0px auto 15px;
+   
+}
+
+.feat2 {
+   background-image: url(Img/icon-security.svg);
+   width: 70px;
+   height: 88px;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   margin:0px auto 10px;
+}
+
+.feat3 {
+   background-image: url(Img/icon-collaboration.svg);
+   width: 86px;
+   height: 71px;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   margin:0px auto 15px;
+}
+
+
+.feat4 {
+   background-image: url(Img/icon-any-file.svg);
+   width: 91px;
+   height: 64px;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   margin:0px auto 15px;
+}
+
+
+#features .container h3, .container1 h3 {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#features .container, .container1 p{
+	text-align: center;
+	font-weight: 300;
+	font-size: 14px;
+	
+}
+
+.content{
+	margin: 10% 10% 10%;
+	display: flex;
+}
+
+.block{
+	width: 45%;
+	margin-right: 10%;
+}
+
+
+ .sub-block{
+	background-image: url(Img/illustration-stay-productive.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 380px;
+}
+
+.block1{
+	flex-basis: 45%;
+}
+
+
+
+.block1 h2, p {
+	padding-bottom: 10px;
+	font-family:'Raleway', Arial, Helvetica, sans-serif;
+}
+
+#testimony {
+	margin: 0 5% 50%;
+	display: flex;
+}
+
+img{
+	margin-top: -30px;
+	margin-right: -40px;
+}
+
+#testimony .pic1 p{
+	font-size: 10px;
+	font-weight: 300;
+	padding-top: 3px;
+}
+
+#testimony .pic1 p::first-letter{
+	font-size: large;
+
+}
+.testimony{
+	flex-basis: 35%;
+	background-color: hsl(219, 30%, 18%);
+	padding: 35px;
+	box-sizing: border-box;
+	margin-right: 20px;
+}
+
+
+.profile-1{
+	background-image: url(Img/profile-1.jpg);
+	width: 30px;
+	height: 30px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	margin-top: 10px;
+}
+
+.profile-2{
+	background-image: url(Img/profile-2.jpg);
+	width: 30px;
+	height: 30px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	margin-top: 10px;
+}
+
+.profile-3{
+	background-image: url(Img/profile-3.jpg);
+	width: 30px;
+	height: 30px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	margin-top: 10px;
+}
+
+.pic{
+	float: left;
+}
+
+.pic1{
+	float: left;
+	margin: 10px 10px 0px;
+}
+
+#sign-in{
+	background-color: hsl(217, 28%, 15%);
+	margin: -28% 20% 5%;
+	padding: 5% 15px 3%;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+#sign-in h2{
+	text-align: center;
+	padding-bottom: 10px;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+#sign-in p{
+	text-align: center;
+	padding: 0 20px 30px;
+	font-size: 14px;
+}
+
+#sign-in .form input{
+  width: 60%;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-right: 2%;
+  margin-left: 5%;
+  border: none;
+}
+
+.info {
+	padding:10px 35px;
+}
+
+/*** Footer  ***/
+
+#footer {
+	background-color: hsl(216, 53%, 9%);
+	padding: 15% 5% 0;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+#footer .logo-2{
+  background-image: url(Img/logo.svg);
+  width: 140px;
+  height: 70px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left:8ppx;
+  margin-bottom: 10px;
+}
+
+.footer {
+	display: flex;
+}
+
+.inline {
+	flex-basis: 20%;
+	box-sizing: border-box;
+	margin-right: 5%;
+}
+
+.fa-brands{
+	padding: 5px;
+	border: 1px solid white;
+	border-radius: 50%;
+	margin-right: 15px;
+	color: white;
+}
+
+#footer .inline .contact p:hover{
+	font-weight:bold;
+	color:hsl(0, 0%, 100%);
+	cursor: pointer;
+}
+
+#footer i:active{
+	color: hsl(176, 68%, 64%);
+	border-color: hsl(176, 68%, 64%);
+}
+
+.attribution {
+	text-align: center;
+}
+
+
+
+
+/****
+@media ( max-width:600px) {
+	#intro{
+
+	}
+
+	.wave-img {
+		background-image: url(Img/bg-curvy-mobile.svg);
+		background-size:100%;
+		height: 120px;
+		background-repeat: no-repeat;
+		z-index: -1;
+       }
+	   
+
+	   .form{
+		   display: inline-block;
+		   width: 100%;
+	   }
+
+	   .footer{
+		   display: inline-block;
+	   }
+
+	   .contact{
+		   margin-top: 50px;
+	   }
+}
+  
+
+***/
