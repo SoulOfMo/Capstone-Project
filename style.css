@@ -1,15 +1,5 @@
 * {
 	margin: 0px;
-	padding: 0px;
-}
-
-/*** Body ***/
-
-body{
-	background-color: hsl(218, 28%, 13%);
-	color: hsl(0, 0%, 100%);
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-size: 14px;
 }
 
 a {
@@ -29,15 +19,28 @@ button:hover:active{
 	background-color: hsl(176, 68%, 64%);
 }
 
-header{
-	background-color: hsl(217, 28%, 15%);
-	padding: 20px 3% 0px;
+/*** Body ***/
+
+body{
+	background-color: hsl(218, 28%, 13%);
+	color: hsl(0, 0%, 100%);
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 14px;
 }
 
+
+
+header{
+	background-color: hsl(217, 28%, 15%);
+}
+
+.intro{
+	padding: 2% 3% 0;
+}
  
 .logo {
   background-image: url(Img/logo.svg);
-  width: 120px;
+  width: 12%;
   height: 50px;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -64,14 +67,14 @@ nav ul li:active{
 }
 
 
-
 #intro {
 	background-image:url(Img/illustration-intro.png);
+	background-size: 100%;
 	width: 350px;
     height: 280px;
 	background-size: 100%;
 	background-repeat: no-repeat;
-	margin:50px auto 0px;
+	margin: 50px auto 0px;
 }  
 
 header h1 {
@@ -84,7 +87,7 @@ header h1 {
 .wave-img {
 	background-image: url(Img/bg-curvy-desktop.svg);
 	background-size:100%;
-	height: 400px;
+	height: auto;
 	width: 100%;
 	background-repeat: no-repeat;
 }
@@ -98,7 +101,7 @@ header h1 {
  .btn{
 	display: flex;
 	justify-content: center;
-	margin-top:15px;
+	margin-top:15px 0px;
  }
  
 button {
@@ -187,7 +190,7 @@ button {
 }
 
 .block{
-	width: 45%;
+	flex-basis: 45%;
 	margin-right: 10%;
 }
 
@@ -203,17 +206,16 @@ button {
 .block1{
 	flex-basis: 45%;
 }
-
-
-
+ 
 .block1 h2, p {
 	padding-bottom: 10px;
 	font-family:'Raleway', Arial, Helvetica, sans-serif;
 }
 
 #testimony {
-	margin: 0 5% 50%;
+	margin: 0 5% 40%;
 	display: flex;
+	width: auto;
 }
 
 img{
@@ -227,10 +229,8 @@ img{
 	padding-top: 3px;
 }
 
-#testimony .pic1 p::first-letter{
-	font-size: large;
 
-}
+
 .testimony{
 	flex-basis: 35%;
 	background-color: hsl(219, 30%, 18%);
@@ -279,7 +279,7 @@ img{
 	margin: 10px 10px 0px;
 }
 
-#sign-in{
+#sign-in {
 	background-color: hsl(217, 28%, 15%);
 	margin: -28% 20% 5%;
 	padding: 5% 15px 3%;
@@ -317,9 +317,9 @@ img{
 
 #footer {
 	background-color: hsl(216, 53%, 9%);
-	padding: 15% 5% 0;
 	font-size: 14px;
 	font-weight: 400;
+	padding: 15% 0% 5%;
 }
 
 #footer .logo-2{
@@ -328,12 +328,13 @@ img{
   height: 70px;
   background-size: 100%;
   background-repeat: no-repeat;
-  margin-left:8ppx;
+  margin-left:2%;
   margin-bottom: 10px;
 }
 
 .footer {
 	display: flex;
+	padding: 0% 2% 10px;
 }
 
 .inline {
@@ -365,15 +366,7 @@ img{
 	text-align: center;
 }
 
-
-
-
-/****
-@media ( max-width:600px) {
-	#intro{
-
-	}
-
+@media ( max-width:615px) {
 	.wave-img {
 		background-image: url(Img/bg-curvy-mobile.svg);
 		background-size:100%;
@@ -382,6 +375,71 @@ img{
 		z-index: -1;
        }
 	   
+	   #features .container {
+		   margin: 50% 20%  10%;
+		   display: flex;
+		   flex-direction: column;
+	   }
+
+	   #features .container1 {
+		margin: 0% 20%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sub-block{
+		width: 300px;
+		height: 380px;
+	 	margin: 15px auto 0px;
+	}
+
+	#testimony img{
+		height: 40px;
+		width: 55px;
+		margin-right: -30px;
+		margin-top: -20px;
+
+	}
+
+	   #testimony{
+		   margin: 15% 10% 50%;
+		   display: flex;
+		   flex-direction: column;
+	   }
+
+	   .testimony {
+		   margin-bottom: 7%;
+	   }
+
+	   #footer{
+		   width: 100%;
+	   }
+
+	   #sign-in { 
+		   width: 80%;
+		   margin-right: auto;
+		   margin-left: auto;
+	   }
+
+	   #sign-in .form input{
+		width: 90%;
+		border-radius: 20px;
+		padding: 10px;
+		box-sizing: border-box;
+		margin-bottom: 15px;
+		border: none;
+	  }
+
+	  button.info{
+		  width: 90%;
+		  margin: 0 auto;
+		  box-sizing: border-box;
+	  }
 
 	   .form{
 		   display: inline-block;
@@ -395,7 +453,31 @@ img{
 	   .contact{
 		   margin-top: 50px;
 	   }
+
+	   #testimony {
+		margin: 0 5% 50%;
+		display: flex;
+	}
+
+	.testimony{
+		flex-direction: column;
+		flex-basis: 100%;
+		background-color: hsl(219, 30%, 18%);
+		padding: 35px;
+		box-sizing: border-box;
+		margin-right: 20px;
+	}
+	
+	.social{
+		margin: 5% 50%;
+	}
 }
   
-
-***/
+@media (max-screen:375px) {
+	#intro{
+		background-image:url(Img/illustration-intro.png);
+		width: 150px;
+		height:100px;
+	}
+	
+}
